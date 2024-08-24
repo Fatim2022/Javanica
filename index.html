@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javanica</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- Tambahkan Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <div class="container">
+        <h1>Javanica </h1>
+        <h2>Cafe & Restaurant</h2>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#menu">Menu</a>
+                        <ul class="dropdown">
+                            <li><a href="#food">Makanan</a></li>
+                            <li><a href="#drinks">Minuman</a></li>
+                            <li><a href="#snacks">Snack</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">Tentang Cafe</a></li>
+                    <li><a href="#contact">Kontak & Saran</a></li>
+                    <li><a href="#reservation">Reservasi</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                    <li><a href="#checkout">Checkout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>Tentang Javanica Cafe</h2>
+        <p>Selamat datang di Cafe & Restaurant kami! Kami menawarkan berbagai menu lezat mulai dari makanan, minuman, hingga snack. Nikmati pengalaman makan yang tak terlupakan di tempat kami.</p>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Menu</h2>
+
+        <div id="food">
+            <h3>Makanan</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/makanan/b4f2758d-9317-41e1-9877-7bbd526c3a5d.jpg" alt="Rice Bowl A">
+                    <h4>Rice Bowl A</h4>
+                    <p>Nasi, Ayam Pedas Manis, Lalapan.</p>
+                    <span>Rp 15.000</span>
+                    <button onclick="addToCart('Rice Bowl A', 15000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/makanan/menu 1.jpeg" alt="Rice Bowl B">
+                    <h4>Rice Bowl B</h4>
+                    <p>Nasi, Ayam Teriyaki, Lalapan.</p>
+                    <span>Rp 15.000</span>
+                    <button onclick="addToCart('Rice Bowl B', 15000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/makanan/img2.jpeg" alt="Rice Bowl C">
+                    <h4>Rice Bowl C</h4>
+                    <p>Ayam Pop Pop , Sambal Matah, Lalapan.</p>
+                    <span>Rp 15.000</span>
+                    <button onclick="addToCart('Rice Bowl C', 15000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/makanan/img7.jpg" alt="Burger Nasi Kuning">
+                    <h4>Burger Nasi Kuning</h4>
+                    <p>Nasi Kuning, Mie Goreng, Ayam Suwir, Telur, Sambal, Lalapan.</p>
+                    <span>Rp 20.000</span>
+                    <button onclick="addToCart('Burger Nasi Kuning', 20000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/makanan/img5.jpg" alt="Rice Bowl D">
+                    <h4>Rice Bowl D</h4>
+                    <p>Nasi Kuning, Mie Goreng, Telur Suwir, Orek Tempe, Sambal, Lalapan.</p>
+                    <span>Rp 12.000</span>
+                    <button onclick="addToCart('Rice Bowl Nasi Kuning', 12000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/makanan/img3.jpeg" alt="Rice Bowl E">
+                    <h4>Rice Bowl E</h4>
+                    <p>Nasi, Nugget, Telur Ceplok, Sambal, Lalapan.</p>
+                    <span>Rp 13.000</span>
+                    <button onclick="addToCart('Rice Bowl E', 13.000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/makanan/new.jpg" alt="Sate Ayam">
+                    <h4>Rice Bowl F</h4>
+                    <p>Nasi, Orek Telur, Udang Asam Manis, Lalapan.</p>
+                    <span>Rp 25.000</span>
+                    <button onclick="addToCart('Rice Bowl F', 25000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/makanan/geprek.jpg" alt="Sate Ayam">
+                    <h4>Rice Bowl G</h4>
+                    <p>Nasi, Ayam Geprek, Lalapan.</p>
+                    <span>Rp 15.000</span>
+                    <button onclick="addToCart('Rice Bowl G', 15000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/makanan/cumi.jpg" alt="Sate Ayam">
+                    <h4>Rice Bowl I</h4>
+                    <p>Nasi, Cumi Pedas Manis, Orek Telur, Lalapn</p>
+                    <span>Rp 25.000</span>
+                    <button onclick="addToCart('Rice Bowl I', 25000)">Add to Cart</button>
+                </div>
+                <!-- Tambahkan lebih banyak item makanan di sini -->
+            </div>
+        </div>
+
+        <div id="drinks">
+            <h3>Minuman</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/minuman/minum 5.jpg" alt="Jus Jambu">
+                    <h4>Jus Jambu Merah</h4>
+                    <span>Rp 8.000</span>
+                    <button onclick="addToCart('Jus Jambu Merah', 8000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/minuman/minum 7.jpg" alt="Ice Coffe">
+                    <h4>Ice Coffe</h4>
+                    <span>Rp 12.000</span>
+                    <button onclick="addToCart('Ice Coffe', 12000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/minuman/minum0.jpg" alt="Air Mineral">
+                    <h4>Le Mineral</h4>
+                    <span>Rp 3.000</span>
+                    <button onclick="addToCart('Le Mineral', 3000)">Add to Cart</button>
+                </div>
+ 
+                <!-- Tambahkan lebih banyak item minuman di sini -->
+            </div>
+        </div>
+
+        <div id="snacks">
+            <h3>Snack</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/snack/snack1.jpg" alt="Jagung Goreng">
+                    <h4>Jagung Goreng</h4>
+                    <span>Rp 10.000</span>
+                    <button onclick="addToCart('Jagung Goreng', 10000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/snack/pisang-goreng.jpg" alt="Pisang Goreng Coklat Keju">
+                    <h4>Pisang Goreng Coklat Keju</h4>
+                    <span>Rp 12.000</span>
+                    <button onclick="addToCart('Pisang Goreng Coklat Keju', 12000)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/snack/risol.jpg" alt="Risol Mayo">
+                    <h4>Risol Mayo</h4>
+                    <span>Rp 16.000</span>
+                    <button onclick="addToCart('Risol Mayo', 16000)">Add to Cart</button>
+                </div>
+                <!-- Tambahkan lebih banyak item snack di sini -->
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="section">
+        <h2>Total Belanja</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: Rp0</p>
+
+    </section>
+
+    <section id="checkout" class="section">
+        <h2>Checkout</h2>
+        <button id="payOnline">Pay Online</button>
+        <button id="payOffline">Pay Offline</button>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Kontak & Saran</h2>
+        <p>Email: javanicamanagemnt@gmail.com</p>
+        <p>Telepon: 085729900882</p>
+        <p>Alamat:Turip, Ngestiharjo, Wates, Kulon Progo, Daerah Istimewa Yogyakarta</p>
+        <p>Kode pos: 55651</p>
+        <textarea placeholder="Masukkan saran atau masukan Anda di sini..." rows="5"></textarea>
+        <br><button>Kirim</button>
+    </section>
+
+    <section id="reservation" class="section">
+        <h2>Reservasi</h2>
+        <p>Ingin memesan tempat? Hubungi kami untuk reservasi!</p>
+        <button><a href="reservation.html">Reservasi Sekarang</a></button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

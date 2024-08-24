@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <section id="reservation1" class="section">
+        <h2>Reservasi Tempat</h2>
+        <form id="reservation1-form">
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Tanggal Reservasi:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Waktu Reservasi:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Jumlah Tamu:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="notes">Catatan Khusus:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+            <button type="submit">Kirim Reservasi</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
